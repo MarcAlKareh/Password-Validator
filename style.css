@@ -1,0 +1,67 @@
+/* * {
+    background-color: rgb(75, 127, 224);
+} */
+
+.parent {
+    display: grid;
+    place-items: center;
+}
+
+/* For password input box */
+.password {
+    height: 65px;
+    width: 215px;
+    font-size: 25px;
+    border: 2.5px solid #000;
+}
+
+/* For the Validation button */
+.button_validate {
+    height: 70px;
+    width: 95px;
+    margin-left: 330px; 
+    margin-top: -70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+    color: rgb(30, 167, 25);
+}
+
+/* For the piece of text below the input box */
+.password_type--string {
+    margin-left: -100px;
+    margin-top: 3px; 
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: light bold;
+    /* color: rgb(74, 75, 73); */
+}
+
+/* For the clickable text */
+.random_pass {
+    color: rgb(14, 101, 233);
+    text-decoration: none;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.hidden {
+    display: none;
+}
+
+.strong {
+    border: 2.5px solid rgb(12, 177, 26);
+    background-color: rgb(211, 236, 117);
+}
+
+.mild {
+    border: 2.5px solid rgb(233, 143, 59);
+    background-color: rgb(243, 215, 122);
+}
+
+.weak {
+    border: 2.5px solid rgb(211, 7, 7);
+    background-color: rgb(245, 148, 119);
+}
