@@ -66,6 +66,9 @@ class PasswordValidatorCl {
       'click',
       this._generateRandomPassword.bind(this)
     );
+
+    // If Enter button on keyboard is presses
+    document.addEventListener('keydown', this._enterButtonClicked.bind(this));
   }
 
   // Checks if string contains special characters
@@ -94,6 +97,12 @@ class PasswordValidatorCl {
 
   _removePasswordClasses(className) {
     if (password.classList.contains(className)) password.classList.remove(className);    
+  }
+
+  _enterButtonClicked(x) {
+      if (x.key === 'Enter') {
+        this._validation();
+      }
   }
 
   _validation() {
