@@ -139,7 +139,7 @@ class PasswordValidatorCl {
       this.#lower >= strongPass.lowerCase &&
       this.#special >= strongPass.specialCharacters
     ) {
-      this._changeBoxStyle('strong');
+      this.changeBoxStyle('strong');
     } else if (
       // Detecting if this is a mild password
       this._betweenNums(
@@ -149,7 +149,7 @@ class PasswordValidatorCl {
       ) &&
       this._betweenNums(this.#nums, weakPass.numbers, strongPass.numbers)
     ) {
-      this._changeBoxStyle('mild');
+      this.changeBoxStyle('mild');
     } else if (
       // Detecting if this is a weak password
       this.passwordLength <= weakPass.characters &&
@@ -158,9 +158,9 @@ class PasswordValidatorCl {
       this.#upper === weakPass.upperCase &&
       this.#special === weakPass.specialCharacters
     ) {
-      this._changeBoxStyle('weak');
+      this.changeBoxStyle('weak');
     } else {
-      this._changeBoxStyle('weak');
+      this.changeBoxStyle('weak');
     }
   }
 
